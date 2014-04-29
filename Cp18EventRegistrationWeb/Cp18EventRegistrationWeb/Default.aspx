@@ -6,4 +6,6 @@
 <asp:Content ID="ContentMain" ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">
     <p>Welcome to the</p>
     <p>Event Registretion</p>
+
+    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
 </asp:Content>
