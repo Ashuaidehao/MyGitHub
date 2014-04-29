@@ -57,7 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\EventManagement.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="EventList.aspx" />
+    <Content Include="EventRegister.aspx" />
     <Content Include="Events.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -77,12 +80,33 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\EventManagement.aspx.cs">
+      <DependentUpon>EventManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EventManagement.aspx.designer.cs">
+      <DependentUpon>EventManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventList.aspx.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventList.aspx.designer.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventRegister.aspx.cs">
+      <DependentUpon>EventRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventRegister.aspx.designer.cs">
+      <DependentUpon>EventRegister.aspx</DependentUpon>
     </Compile>
     <Compile Include="Events.Master.cs">
       <DependentUpon>Events.Master</DependentUpon>
@@ -127,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Intro\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
